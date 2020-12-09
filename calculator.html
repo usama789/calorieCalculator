@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Calori claculator</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="./jquery-3.5.1.min.js"></script>
+    <script src="./popper.min.js"></script>
+    <script src="./bootstrap.min.js"></script> 
+    <script src="./calculator.js"></script>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    </head>
+  <body>
+    
+    <h1 id="cal_c">Calorie Calculator</h1>
+
+    <div class="recipe-form">
+        <select name="recipe" id="recipe" >
+             <option disabled>MILK (higher % of simple carbohydrates,less nutrient)</option>
+             <option carb="26" cal="208"  selected>Chocolate milk (1 cup) </option>
+             <option carb="12" cal="121" > Low fat (2%) milk </option>
+             <option carb="30" cal="161">Pudding (any flavor) (1/2 cup) </option>
+             <option carb="12" cal="86" >Skim milk (1 cup) </option>
+             <option carb="42" cal="225">Yogurt (fruit-flavored, low fat) (1 cup)</option>
+             <option carb="34" cal="220" >Yogurt (frozen, low fat) (1 cup) </option>
+
+
+             <option disabled>BEANS (higher % of complex carbohydrates; more nutrient dense)
+             </option>
+             <option carb="22" cal="134" >Black eye peas (1/2 cup) </option>
+             <option carb="45" cal="269" >Garbanzo beans (chick peas) (1 cup) </option>
+             <option carb="26" cal="142" >Refried beans (1/2 cup)</option>
+             <option carb="45" cal="249" >White beans (1 cup)</option>
+             <option carb="48" cal="259" >Navy beans (1 cup) </option>
+             <option carb="44" cal="235" >Pinto beans (1 cup)</option>
+             
+                                        
+
+             <option disabled>VEGETABLES (higher % of complex carbohydrates; more nutrient</option>
+             <option carb="8" cal="31">Carrot (1 medium) </option>
+             <option carb="21" cal="89">Corn (1/2 cup) </option>
+             <option carb="20" cal="108">Beans, Lima (1/2 cup cooked)</option>
+             <option carb="12" cal="63">Peas, green (1/2 cup) </option>
+             <option carb="28" cal="118">Sweet Potato (1 large) </option>
+             <option carb="20" cal="90">Three-bean salad (1/2 cup)</option>
+             <option carb="50" cal="220">Potato (1 large, baked, plain)</option>
+             
+                                        
+                                        
+             <option disabled>Fruits (higher % of simple carbohydrates; less nutrient</option>
+             <option carb="21" cal="81">Apple (1 medium) </option>
+             <option carb="28" cal="111">Apple juice (1 cup)</option>
+             <option carb="27" cal="105">Banana (1)</option>
+             <option carb="14" cal="57">Cantaloupe (1 cup) </option>
+             <option carb="61" cal="228">Dates (dried)(10)</option>
+             <option carb="19" cal="77">Pineapple (1 cup)</option>
+             <option carb="53" cal="201">Prunes (dried)(10)</option>
+             <option carb="79" cal="302">Raisins</option>
+
+             
+        </select>    
+
+        <button id="add-button"><b> Add Recipe</b></button>
+    </div>
+
+
+        <table class="table" id="total-form">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Carbohydrates</th>
+                <th>Calories</th>
+                <th>Action</th>
+             </tr>
+            </thead>
+            <tbody id="recipe_b">
+                
+            </tbody>
+            <tfoot>
+            <tr>
+            <th>TOTAL</th>
+            <td id="carbTotal"></td>
+            <td id="calorieTotal"></td>
+            <td><button id="calculate"><b>Calculate</b></button></td>
+            </tr>
+          </tfoot>
+           
+          </table>
+
+    
+    </body>
+</html>

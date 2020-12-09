@@ -1,0 +1,32 @@
+#cal_c {
+  text-align: center;
+  padding-top: 0.5em;
+}
+
+.recipe-form {
+  display: flex;
+  justify-content: center;
+}
+
+#DeleteButton {
+  
+  background-color: red;
+  color: white;
+  border: none;
+  margin-left: 0.5em;
+}
+#calculate {
+  margin-left: 0.5em;
+  color: blue;
+  background-color: lightblue;
+  border: none;
+}
+
+#total-form {
+  margin-top: 5em;
+}
+body{
+  background-color: rgb(231, 231, 231);
+}
+
+
